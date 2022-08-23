@@ -30,7 +30,7 @@ body{
 .descricao{
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 button{
   height: 25px;
@@ -44,7 +44,7 @@ button{
   color: #020929;
 }
 select{
-  padding: 5px;
+  padding: 7px;
   border: 1px solid #020929;
   border-radius: 3px;
 }
@@ -53,8 +53,8 @@ input[type="color"]{
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  width: 42px;
-  height: 26px;
+  width: 40px;
+  height: 28px;
   border: none;
   cursor: pointer;
 }
@@ -74,5 +74,5 @@ input[type="color"]::-moz-color-swatch{
   height: 50vh;
 }
 .ligado{
-  background-color: #e0e9ff;
+  background-color: #E1E1E1;
 }

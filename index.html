@@ -6,39 +6,38 @@
     <title>EditorDeTexto</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/master.css">
     <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
     <div class="caixa">
       <div class="opcoes">
-          <button id="negrito" class="opcaobotao"> <i class="fa-solid fa-bold"> </i> </button>
-          <button id="italico" class="opcaobotao"> <i class="fa-solid fa-italic"> </i> </button>
-          <button id="sublinhado" class="opcaobotao"> <i class="fa-solid fa-underline"> </i> </button>
-          <button id="tachado" class="opcaobotao"> <i class="fa-solid fa-strikethrough"> </i> </button>
+          <button id="bold" class="botao formatacao"> <i class="fa-solid fa-bold"> </i> </button>
+          <button id="italic" class="botao formatacao"> <i class="fa-solid fa-italic"> </i> </button>
+          <button id="underline" class="botao formatacao"> <i class="fa-solid fa-underline"> </i> </button>
+          <button id="strikethrough" class="botao formatacao"> <i class="fa-solid fa-strikethrough"> </i> </button>
 
-          <button id="aumentartamanho" class="opcaobotaotamanho"> <i class="fa-solid fa-superscript"> </i> </button>
-          <button id="diminuirtamanho" class="opcaobotaotamanho"> <i class="fa-solid fa-subscript"> </i> </button>
+          <button id="superscript" class="botao tamanho"> <i class="fa-solid fa-superscript"> </i> </button>
+          <button id="subscript" class="botao tamanho"> <i class="fa-solid fa-subscript"> </i> </button>
 
-          <button id="listaordenada" class="opcaobotao"> <i class="fa-solid fa-list-ol"> </i> </button>
-          <button id="listapontos" class="opcaobotao"> <i class="fa-solid fa-list"> </i> </button>
+          <button id="insertOrderedList" class="botao"> <i class="fa-solid fa-list-ol"> </i> </button>
+          <button id="insertUnorderedList" class="botao"> <i class="fa-solid fa-list"> </i> </button>
 
-          <button id="desfazer" class="opcaobotao"> <i class="fa-solid fa-undo"> </i> </button>
-          <button id="repetir" class="opcaobotao"> <i class="fa-solid fa-solid fa-redo"> </i> </button>
+          <button id="undo" class="botao"> <i class="fa-solid fa-undo"> </i> </button>
+          <button id="redo" class="botao"> <i class="fa-solid fa-solid fa-redo"> </i> </button>
 
-          <button id="crialink" class="opcaobotaoavancado"> <i class="fa-solid fa-link"> </i> </button>
-          <button id="desfazlink" class="opcaobotaoavancado"> <i class="fa-solid fa-unlink"> </i> </button>
+          <button id="createLink" class="avancado"> <i class="fa-solid fa-link"> </i> </button>
+          <button id="unlink" class="botao"> <i class="fa-solid fa-unlink"> </i> </button>
 
-          <button id="alinharesquerda" class="opcaobotaoalinhamento"> <i class="fa-solid fa-align-left"> </i> </button>
-          <button id="alinharcentro" class="opcaobotaoalinhamento"> <i class="fa-solid fa-align-center"> </i> </button>
-          <button id="alinhardireita" class="opcaobotaoalinhamento"> <i class="fa-solid fa-align-right"> </i> </button>
-          <button id="alinharjustificado" class="opcaobotaoalinhamento"> <i class="fa-solid fa-align-justify"> </i> </button>
+          <button id="justifyLeft" class="botao alinhamento"> <i class="fa-solid fa-align-left"> </i> </button>
+          <button id="justifyCenter" class="botao alinhamento"> <i class="fa-solid fa-align-center"> </i> </button>
+          <button id="justifyRight" class="botao alinhamento"> <i class="fa-solid fa-align-right"> </i> </button>
+          <button id="justifyFull" class="botao alinhamento"> <i class="fa-solid fa-align-justify"> </i> </button>
 
-          <button id="aumentarrecuo" class="opcaobotaorecuo"> <i class="fa-solid fa-indent"> </i> </button>
-          <button id="diminuirrecuo" class="opcaobotaorecuo"> <i class="fa-solid fa-outdent"> </i> </button>
+          <button id="indent" class="botao recuo"> <i class="fa-solid fa-indent"> </i> </button>
+          <button id="outdent" class="botao recuo"> <i class="fa-solid fa-outdent"> </i> </button>
 
-          <select id="formatacaobloco" class="opcaobotaoavancado">
+          <select id="formatBlock" class="avancado">
             <option value="H1">H1</option>
             <option value="H2">H2</option>
             <option value="H3">H3</option>
@@ -47,24 +46,22 @@
             <option value="H6">H6</option>
           </select>
 
-          <select id="nomedafonte" class="opcaobotaoavancado"></select>
-          <select id="tamanhodafonte" class="opcaobotaoavancado"></select>
+          <select id="fontName" class="avancado"></select>
+          <select id="fontSize" class="avancado"></select>
 
           <div class="descricao">
-            <input type="color" id="cordafonte" class="opcaobotaoavancado">
-            <label class="opcaobotaoavancado">Cor do Texto</label>
+            <input type="color" id="foreColor" class="avancado">
+            <label for="foreColor">Cor do Texto</label>
           </div>
 
           <div class="descricao">
-            <input type="color" id="cordofundo" class="opcaobotaoavancado">
-            <label class="opcaobotaoavancado">Cor do Fundo</label>
+            <input type="color" id="backColor" class="avancado">
+            <label for="backColor">Cor do Fundo</label>
           </div>
-      </div>
-      <div id="areadotexto" contenteditable="true">
-
-      </div>
     </div>
-
-  <script src="script.js"> </script>
+      <div id="areadotexto" contenteditable="true">
+      </div>
+  </div>
+    <script src="script.js"></script>
   </body>
 </html>
